@@ -11,8 +11,8 @@ script_location = alembic
 # the 'revision' command, regardless of autogenerate
 # revision_environment = false
 
-sqlalchemy.url = postgresql+psycopg2://paddles:changeme@localhost/paddles
-
+# sqlalchemy.url = postgresql+psycopg2://paddles:changeme@localhost/paddles
+sqlalchemy.url = postgresql://postgres:123123@localhost/paddles
 
 # Logging configuration
 [loggers]

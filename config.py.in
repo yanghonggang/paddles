@@ -55,7 +55,7 @@ logging = {
     'loggers': {
         'root': {'level': 'INFO', 'handlers': ['console']},
         'paddles': {'level': 'DEBUG', 'handlers': ['console']},
-        'sqlalchemy': {'level': 'WARN'},
+        'sqlalchemy': {'level': 'WARN', 'handlers': ['console']},
         'py.warnings': {'handlers': ['console']},
         '__force_dict__': True
     },
@@ -77,7 +77,8 @@ logging = {
 
 sqlalchemy = {
     # You may use SQLite for testing
-    'url': 'sqlite:///dev.db',
+    'url': 'postgresql://postgres:123123@localhost/paddles',
+    # 'url': 'sqlite:///dev.db',
     # When you set up PostreSQL, it will look more like:
     #'url': 'postgresql+psycopg2://USER:PASSWORD@DB_HOST/DB_NAME',
     'echo':          True,
